@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import "./index.css"
 
-const Input = ({ correctValue, placeholder, isOutput = false }) => {
+const Input = ({ correctValue, placeholder, isOutput = false, TabIndex }) => {
     const [valueInput, setValueInput] = useState("")
 
     const changeValue = e => {
@@ -19,6 +19,7 @@ const Input = ({ correctValue, placeholder, isOutput = false }) => {
             style={isOutput ? {width: "300px", marginTop: 5} : {}}
             placeholder={placeholder}
             onChange={changeValue}
+            tabIndex={TabIndex}
         />
     )
 }
