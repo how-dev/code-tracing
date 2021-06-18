@@ -3,7 +3,29 @@ import { Column, Title } from "./auxClasses";
 
 export const exerciseOne = [
     new Column("i", sequenceNumberResponse(0, 5)),
-    new Column("console", sequenceNumberResponse(0, 5)),
+    new Column(
+        "console",
+        [
+            {
+                response: 0
+            },
+            {
+                response: 1
+            },
+            {
+                response: 2
+            },
+            {
+                response: 3
+            },
+            {
+                response: 4
+            },
+            {
+                response: "-"
+            },
+        ]
+    ),
     new Column("i < 5", sequenceBooleanResponse(6)),
 ]
 export const exerciseOneTitle = new Title (
@@ -17,7 +39,29 @@ export const exerciseOneTitle = new Title (
 
 export const exerciseTwo = [
     new Column("i", sequenceNumberResponse(5, 0, 1, true)),
-    new Column("console", sequenceNumberResponse(5, 0, 1, true)),
+    new Column(
+        "console",
+        [
+            {
+                response: 5
+            },
+            {
+                response: 4
+            },
+            {
+                response: 3
+            },
+            {
+                response: 2
+            },
+            {
+                response: 1
+            },
+            {
+                response: "-"
+            },
+        ]
+    ),
     new Column("i > 0", sequenceBooleanResponse(6))
 ]
 export const exerciseTwoTitle = new Title (
