@@ -49,6 +49,7 @@ export const Routes = () => {
                 <Input correctValue={"NaN"} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop8">
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseEight} title={exerciseEightTitle} />
                 <Input correctValue={312} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>

@@ -413,7 +413,7 @@ export const exerciseEight = [
                 response: 0
             },
             {
-                response: "undefined"
+                response: "-"
             }
         ]
     ),
