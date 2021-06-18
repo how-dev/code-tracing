@@ -40,6 +40,7 @@ export const Routes = () => {
                 <Table columns={exerciseFive} title={exerciseFiveTitle} />
             </Route>
             <Route path="/loop6">
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseSix} title={exerciseSixTitle} />
                 <Input correctValue={12} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>

@@ -224,7 +224,7 @@ export const exerciseSix = [
                 response: false
             },
             {
-                response: true
+                response: "-"
             },
         ]
     ),
