@@ -155,6 +155,32 @@ export const exerciseFourTitle = new Title (
 export const exerciseFive = [
     new Column("churros", sequenceNumberResponse(1, 7)),
     new Column(
+        "churros % 2 === 0",
+        [
+            {
+                response: false
+            },
+            {
+                response: true
+            },
+            {
+                response: false
+            },
+            {
+                response: true
+            },
+            {
+                response: false
+            },
+            {
+                response: true
+            },
+            {
+                response: "-"
+            },
+        ]
+    ),
+    new Column(
         "console",
         [
             {
