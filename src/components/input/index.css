@@ -1,0 +1,32 @@
+.incorrectInput {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 0;
+    border-bottom: 2px solid red;
+    outline: none;
+    cursor: text;
+    transition: .5s;
+}
+    .incorrectInput:focus {
+        border-bottom: 2px solid #bbbb0c;
+    }
+
+.correctInput {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 0;
+    border-bottom: 2px solid #00ff00;
+    outline: none;
+    cursor: text;
+    transition: .5s;
+}

@@ -1,0 +1,9 @@
+.column {
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 2px;
+}
+    .column > * {
+        margin: 0;
+        font-size: 20px;
+    }

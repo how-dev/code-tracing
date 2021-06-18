@@ -1,0 +1,26 @@
+.buttonContainer {
+    background: blueviolet;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+}
+    .buttonContainer > a {
+        display: flex;
+    }
+    .buttonContainer a button {
+        background: #22262b;
+        color: white;
+        width: 60px;
+        padding: 2px;
+        border-radius: 10px;
+        outline: none;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .buttonContainer a button:hover {
+        background: #434c52;
+    }
+
+    .buttonContainer a button:focus {
+        background: #434c52;
+    }
