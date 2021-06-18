@@ -140,7 +140,7 @@ export const exerciseFive = [
 ]
 export const exerciseFiveTitle = new Title (
     "for (let churros = 1; churros < 7; churros++) {\n" +
-    "    if (churros % 2 === 0)\n" +
+    "    if (churros % 2 === 0) {\n" +
     "        console.log(churros)\n" +
     "    }\n" +
     "}\n" ,
