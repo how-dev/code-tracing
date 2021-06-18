@@ -574,7 +574,7 @@ export const exerciseTeen = [
                 response: false
             },
             {
-                response: false
+                response: "-"
             }
         ]
     ),

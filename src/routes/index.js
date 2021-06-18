@@ -57,6 +57,7 @@ export const Routes = () => {
                 <Input correctValue={1} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop10">
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseTeen} title={exerciseTeenTitle} />
                 <Input correctValue={-247895} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
