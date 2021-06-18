@@ -565,10 +565,10 @@ export const exerciseTeen = [
         "A + B % 2 === 1",
         [
             {
-                response: true
+                response: false
             },
             {
-                response: true
+                response: false
             },
             {
                 response: false

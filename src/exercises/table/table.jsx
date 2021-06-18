@@ -4,6 +4,8 @@ import HeaderTable from "../../components/headerTable";
 import "../index.css"
 
 const Table = ({ columns, title }) => {
+
+
     return (
         <div className="table">
             <HeaderTable
@@ -14,7 +16,6 @@ const Table = ({ columns, title }) => {
             />
             <div className="cells">
                 {
-
                     columns.map((column, index) => {
                         return (
                             <Column column={column} key={index}/>
