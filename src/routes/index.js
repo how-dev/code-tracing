@@ -24,6 +24,7 @@ export const Routes = () => {
                 <Table columns={exerciseOne} title={exerciseOneTitle} />
             </Route>
             <Route path="/loop2">
+                <h5>Caso não haja responsa, responda "-"</h5>
                 <Table columns={exerciseTwo} title={exerciseTwoTitle} />
             </Route>
             <Route path="/loop3">
