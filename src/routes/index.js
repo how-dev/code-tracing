@@ -20,11 +20,11 @@ export const Routes = () => {
                 <h1>Lista de exercícios: Teste de mesa</h1>
             </Route>
             <Route path="/loop1">
-                <h5>Caso não haja responsa, responda "-"</h5>
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseOne} title={exerciseOneTitle} />
             </Route>
             <Route path="/loop2">
-                <h5>Caso não haja responsa, responda "-"</h5>
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseTwo} title={exerciseTwoTitle} />
             </Route>
             <Route path="/loop3">
@@ -36,7 +36,7 @@ export const Routes = () => {
                 <Input correctValue={255} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop5">
-                <h5>Caso não haja responsa, responda "-"</h5>
+                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseFive} title={exerciseFiveTitle} />
             </Route>
             <Route path="/loop6">
