@@ -511,7 +511,7 @@ export const exerciseTeen = [
         ]
     ),
     new Column(
-        "numberA",
+        "A",
         [
             {
                 response: 11
@@ -545,7 +545,7 @@ export const exerciseTeen = [
         ]
     ),
     new Column(
-        "numberB",
+        "B",
         [
             {
                 response: 33
