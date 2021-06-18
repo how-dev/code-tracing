@@ -220,7 +220,7 @@ export const exerciseSix = [
 export const exerciseSixTitle = new Title (
     "let output = 0\n" +
     "for (let i = 0; i < 8; i++) {\n" +
-    "    if (i % 2 === 0)\n" +
+    "    if (i % 2 === 0) {\n" +
     "        output += 2\n" +
     "    } else {\n" +
     "        output += 1\n" +
