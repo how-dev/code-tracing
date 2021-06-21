@@ -1,6 +1,8 @@
 import {Link, Route} from "react-router-dom";
 import Table from "../exercises/table/table";
 import Input from "../components/input";
+import HomePage from "../components/homepage";
+import LevelsPage from "../components/levelsPage";
 import { exerciseOne, exerciseOneTitle } from "../exercises/columns/columns";
 import { exerciseTwo, exerciseTwoTitle } from "../exercises/columns/columns";
 import { exerciseThree, exerciseThreeTitle } from "../exercises/columns/columns";
@@ -17,14 +19,15 @@ export const Routes = () => {
     return (
         <>
             <Route exact path="/">
-                <h1>Lista de exercícios: Teste de mesa</h1>
+                <HomePage />
+            </Route>
+            <Route path="/levels">
+                <LevelsPage />
             </Route>
             <Route path="/loop1">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseOne} title={exerciseOneTitle} />
             </Route>
             <Route path="/loop2">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseTwo} title={exerciseTwoTitle} />
             </Route>
             <Route path="/loop3">
@@ -36,11 +39,9 @@ export const Routes = () => {
                 <Input correctValue={255} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop5">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseFive} title={exerciseFiveTitle} />
             </Route>
             <Route path="/loop6">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseSix} title={exerciseSixTitle} />
                 <Input correctValue={12} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
@@ -49,7 +50,6 @@ export const Routes = () => {
                 <Input correctValue={"NaN"} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop8">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseEight} title={exerciseEightTitle} />
                 <Input correctValue={312} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
@@ -58,7 +58,6 @@ export const Routes = () => {
                 <Input correctValue={1} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>
             <Route path="/loop10">
-                <h5>Caso não haja resposta, responda "-"</h5>
                 <Table columns={exerciseTeen} title={exerciseTeenTitle} />
                 <Input correctValue={-247895} placeholder={"console.log(output)"} isOutput={true}/>
             </Route>

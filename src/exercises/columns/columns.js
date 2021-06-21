@@ -30,7 +30,7 @@ export const exerciseOne = [
 ]
 export const exerciseOneTitle = new Title (
     "for (let i = 0; i < 5; i++) {\n" +
-    "      console.log(i)\n" +
+    "    console.log(i)\n" +
     "}",
     1,
     10,
@@ -66,7 +66,7 @@ export const exerciseTwo = [
 ]
 export const exerciseTwoTitle = new Title (
     "for (let i = 5; i > 0; i--) {\n" +
-    "      console.log(i)\n" +
+    "    console.log(i)\n" +
     "}",
     2,
     1,
@@ -102,7 +102,7 @@ export const exerciseThree = [
 export const exerciseThreeTitle = new Title (
     "let output = 0\n" +
     "for (let counter = 2; counter <= 10; counter += 2) {\n" +
-    "      output += counter\n" +
+    "    output += counter\n" +
     "}\n" +
     "console.log(output)"
     ,
@@ -144,7 +144,7 @@ export const exerciseFour = [
 export const exerciseFourTitle = new Title (
     "let response = 0\n" +
     "for (let index = 60; index > 19; index -= 7) {\n" +
-    "      response += index\n" +
+    "    response += index\n" +
     "}\n" +
     "console.log(response)",
     4,

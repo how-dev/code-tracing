@@ -1,10 +1,21 @@
 .headerTable {
-    background: #22262b;
+    background: transparent;
     padding: 10px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+h5 {
+    color: black;
+}
+.logoKenzie {
+    width: 100px;
+}
+.headerTable pre {
+    color: black;
 }
     .headerTable h2 {
         margin: 0;
-        background: blueviolet;
+        background: #0057ff;
         width: 200px;
         height: 60px;
         display: flex;
@@ -16,7 +27,7 @@
         height: 70px;
     }
     .headerTable h2 > * button {
-        background: #22262b;
+        background: #7A00B4;
         color: white;
         outline: none;
         padding: 5px;

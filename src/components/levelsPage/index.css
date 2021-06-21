@@ -1,0 +1,43 @@
+.levelsLinks {
+    text-decoration: none;
+    color: white;
+}
+.levelPageContainer {
+    width: 85%;
+    margin-top: 40px;
+}
+.topLevelPage {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+    .topLevelPage > div {
+        border: 5px solid black;
+        border-radius: 10px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 800px;
+        height: 250px;
+        box-shadow: -15px 15px 30px 10px rgba(0, 0, 0, 0.2)
+    }
+        .topLevelPage img {
+            width: 250px;
+        }
+        .topLevelPage div p {
+            color: black;
+            font-size: 3rem;
+            margin: 0;
+        }
+        .topLevelPage > div > div {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    .levels {
+        display: flex;
+        flex-wrap: wrap;
+    }

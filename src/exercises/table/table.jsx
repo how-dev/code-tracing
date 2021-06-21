@@ -17,7 +17,6 @@ const Table = ({ columns, title }) => {
             <div className="cells">
                 {
                     columns.map((column, index) => {
-                        console.log(index)
                         return (
                             <Column column={column} key={index} />
                         )

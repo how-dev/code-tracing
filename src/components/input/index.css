@@ -1,31 +1,32 @@
 .incorrectInput {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
+    background: rgba(255, 0, 0, 0.3);
+    color: black;
     font-family: monospace;
     font-size: 20px;
     height: 30px;
     width: 100%;
     margin-bottom: 5px;
     border: 0;
-    border-bottom: 2px solid red;
+    border-bottom: 5px solid red;
     outline: none;
     cursor: text;
     transition: .5s;
 }
     .incorrectInput:focus {
-        border-bottom: 2px solid #bbbb0c;
+        border-bottom: 5px solid #eaea25;
+        background: rgba(243, 255, 0, 0.37);
     }
 
 .correctInput {
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
+    background: rgba(0, 177, 1, 0.45);
+    color: #005802;
     font-family: monospace;
     font-size: 20px;
     height: 30px;
     width: 100%;
     margin-bottom: 5px;
     border: 0;
-    border-bottom: 2px solid #00ff00;
+    border-bottom: 5px solid #00ff00;
     outline: none;
     cursor: text;
     transition: .5s;

@@ -2,9 +2,9 @@ import React from "react";
 import Input from "../input";
 import "./index.css";
 
-const Column = ({ column, key }) => {
+const Column = ({ column }) => {
     return (
-        <div key={key} className="column">
+        <div className="column">
             <p>{column.title}</p>
             {column.fields.map((fieldElt, fieldIndex) => {
                 let tabIndex = fieldIndex + 1

@@ -5,7 +5,6 @@ const Input = ({ correctValue, placeholder, isOutput = false, TabIndex }) => {
     const [valueInput, setValueInput] = useState("")
 
     const changeValue = e => {
-        console.log(valueInput)
         setValueInput(e.target.value)
     }
 
