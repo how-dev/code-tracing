@@ -46,7 +46,7 @@ const HomePage = () => {
             <section className="topHomePage">
                 <img alt="" src={kenzieLogo1} />
                 <a  rel="noreferrer" target="_blank" href="https://alunos.kenzie.com.br/courses/43" className="canvasLink">
-                    <TopButton variant="outlined" color="primary" className={classes.margin}>
+                    <TopButton variant="outlined" color="primary">
                         Voltar ao Canvas
                     </TopButton>
                 </a>
@@ -60,7 +60,7 @@ const HomePage = () => {
                         </StartButton>
                     </Link>
                 </div>
-                <img alt="" src={devLogo}/>
+                <img className='imageDev' alt="" src={devLogo}/>
             </section>
         </main>
     )
