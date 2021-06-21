@@ -13,9 +13,11 @@ const LinksButton = withStyles((theme) => ({
         '&:hover': {
             backgroundColor: "#660197",
         },
-        padding: "20px 50px",
+        padding: "20px 20px",
         borderRadius: "20px",
         fontWeight: "bold",
+        fontSize: '0.7rem',
+        width: '175px'
     },
 }))(Button);
 
