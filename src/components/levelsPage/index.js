@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import kenzieLogo1 from "../../images/kenzie.png"
 import "./index.css"
 import {withStyles} from "@material-ui/core/styles";
@@ -13,16 +13,15 @@ const LinksButton = withStyles((theme) => ({
         '&:hover': {
             backgroundColor: "#660197",
         },
-        padding: "20px 50px",
+        padding: "20px 20px",
         borderRadius: "20px",
         fontWeight: "bold",
+        fontSize: '0.7rem',
+        width: '175px'
     },
 }))(Button);
 
 const LevelsPage = () => {
-    const [size, Resize] = useState(window.innerWidth)
-    window.addEventListener("resize", () => {Resize(window.innerWidth)})
-
     return (
         <main className="levelPageContainer">
             <section className="topLevelPage">

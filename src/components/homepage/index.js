@@ -51,7 +51,7 @@ const HomePage = () => {
             <section className="topHomePage">
                 <img alt="" src={kenzieLogo1} />
                 <a  rel="noreferrer" target="_blank" href="https://alunos.kenzie.com.br/courses/43" className="canvasLink">
-                    <TopButton variant="outlined" color="primary" className={classes.margin}>
+                    <TopButton variant="outlined" color="primary">
                         {size >= 1024 ? "Voltar ao Canvas" : <img alt="" src={kenzieLogo2} />}
                     </TopButton>
                 </a>

@@ -1,10 +1,12 @@
 .table {
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .cells {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     font-family: monospace;
     background: transparent;
+    flex-wrap: wrap;
 }

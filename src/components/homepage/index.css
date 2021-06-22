@@ -1,5 +1,5 @@
 .container {
-    width: 90%;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -13,7 +13,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        min-width: 90vw;
     }
         .topHomePage img {
             width: 200px;
@@ -45,13 +45,18 @@
         align-items: center;
     }
     .startHomePage p {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: lighter;
     }
     .startHomePage a button {
         width: 80vw;
         border-radius: 25px;
-        box-shadow: rgba(255, 80, 0, 0.4) 0px 5px, rgba(255, 80, 0, 0.3) 0px 10px, rgba(255, 80, 0, 0.2) 0px 15px, rgba(255, 80, 0, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        box-shadow:
+                rgba(255, 80, 0, 0.4) 0 5px,
+                rgba(255, 80, 0, 0.3) 0 10px,
+                rgba(255, 80, 0, 0.2) 0 15px,
+                rgba(255, 80, 0, 0.1) 0 20px,
+                rgba(240, 46, 170, 0.05) 0 25px;
     }
     .bodyHomePage img {
         width: 100%;
