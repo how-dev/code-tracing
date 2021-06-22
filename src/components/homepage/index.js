@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import { Link } from "react-router-dom";
 import Button from '@material-ui/core/Button';
 import kenzieLogo1 from "../../images/kenzie.png"
 import devLogo from "../../images/image.png"
+import mobileLogo from "../../images/mobileImage.png"
+import kenzieLogo2 from "../../images/kenzieLogo.png"
 
 import "./index.css"
 
@@ -40,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
 
 const HomePage = () => {
     const classes = useStyles();
+    const [size, Resize] = useState(window.innerWidth)
+
+    window.addEventListener("resize", () => {Resize(window.innerWidth)})
 
     return (
         <main className="container">
@@ -47,12 +52,13 @@ const HomePage = () => {
                 <img alt="" src={kenzieLogo1} />
                 <a  rel="noreferrer" target="_blank" href="https://alunos.kenzie.com.br/courses/43" className="canvasLink">
                     <TopButton variant="outlined" color="primary" className={classes.margin}>
-                        Voltar ao Canvas
+                        {size >= 1024 ? "Voltar ao Canvas" : <img alt="" src={kenzieLogo2} />}
                     </TopButton>
                 </a>
             </section>
             <section className="bodyHomePage">
                 <div className="startHomePage">
+
                     <p>Dev, bora testar o seu raciocínio com o teste de mesa??</p>
                     <Link to="/levels" style={{textDecoration: "none"}}>
                         <StartButton variant="contained" color="primary" className={classes.margin}>
@@ -60,7 +66,8 @@ const HomePage = () => {
                         </StartButton>
                     </Link>
                 </div>
-                <img alt="" src={devLogo}/>
+                {size <= 1024 && <h4 style={{color: "black"}}>Code Tracing</h4>}
+                <img alt="" src={size >= 1024 ? devLogo : mobileLogo}/>
             </section>
         </main>
     )

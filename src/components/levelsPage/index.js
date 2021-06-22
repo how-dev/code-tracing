@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import kenzieLogo1 from "../../images/kenzie.png"
 import "./index.css"
 import {withStyles} from "@material-ui/core/styles";
@@ -20,6 +20,9 @@ const LinksButton = withStyles((theme) => ({
 }))(Button);
 
 const LevelsPage = () => {
+    const [size, Resize] = useState(window.innerWidth)
+    window.addEventListener("resize", () => {Resize(window.innerWidth)})
+
     return (
         <main className="levelPageContainer">
             <section className="topLevelPage">
